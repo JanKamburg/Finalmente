@@ -1,14 +1,53 @@
 2222222222222
 
 A.  Explain what recursion is and when it is useful.
+    Recursion is when a method calls itself in order to keep computing a variable. It is used to save lines of code and when it is 
+    unknown how many execusion you need to do to a variable.
     Explain what the |termination step| and |recursion step| are in a recursive method.
+    
+    Termination Step:
+        At the termination step the recursion ends because an outcome has been reached.
+    Recursion Step:
+        At this step the method calls itself to do what i descried in the explanation.
 
 B.  Describe the difference between a Queue and a Stack.
-
+    In a queue the last object added will be dealt with at the end while in a Stack the last object added will be dealt with first.
 C.  Write a class for an element doublely-linked list.
+    /**
+ * Created by Jan on 07.06.2016.
+ */
+public class EDLL {
+    public EDLL Next;
+    public EDLL Prev;
+    public Object O;
+
+    public EDLL(Object O, EDLL N, EDLL P){
+        this.O = O;
+        this.Next = N;
+        this.Prev = P;
+    }
+    
+    public void append(EDLL L){
+        this.last().Next = L;
+    }
+
+    public EDLL last(){
+        EDLL Temp = this;
+        while(Temp.Next != null){
+            Temp = Temp.Next;
+        }
+        return Temp;
+    }
+}
 
 D.  Explain what a Merkle Tree is.  
+    It is a hash tree which can hold many data samples and makes it easy to veryfiy a huge amount of documents
     Describe the structure and purpose of a Merkle Tree.
+    The structure is basicily the same as a binary tree. But in a merkle tree every node it based upon the one coming after it. It is build from down to up. Its prupose is to hold many informations which are needed to verify a document.
     What is the Merkle root?
+    The element at the top of the tree.(Mama hash)
     What is the function of a certificate in this data structure?
+    It returns the root and any node needed to veryify a given document which was used to build the tree.
+    
+    
     

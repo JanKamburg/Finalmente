@@ -1,18 +1,33 @@
 333333333
 
 A.  Explain how digital signature works with public/private keypairs.
-
+    A digital signature contains a public and a private key. The private key is only known to the owner while the public key is
+    availible to be seen by everyone. With the private key it is possible to generate to public key. By this way a proof of existence
+    and ownership can be made.
 B.  Identify your favorite Java project this semester.  
+    The Particle simulation was my favourite.
     Describe two things you learned by doing the project.
+    1) I learned about efficency when dealing with many operations
+    2) I learned hwo to do multi threading by drawing particles and other calculations at the same time.
     Describe two ways in which the project could be improved or expanded.
+    1) Better detection of particle movement
+    2) More dimension drawing(3d) and better GUI
     
 C.  Describe two advantages of object-oriented programming.
+    1) Objects are easily created and used for any purpose
+    2) Very few limitations
     Describe two disadvantages of object-oriented programming.
+    1) The size of object-oriented programms is larger than normal ones
+    2) Because of their size they are slower in execution
     
 D.  Consider the following PYTHON code for the MNode class given below.
-    What is the difference in the way Python and Java handle the declaration of datatypes?
+    What is the diffe re fix set to a variable while they can be exchanged throughout the programm in Python.
     Explain the difference in how constructors are written in Python vs Java.
+    They are very similar. But in java there are more attributes to a variable and constructor like public/private. Also classes in java
+    can  be based on another class.
     Which language do you prefer?  Explain why.
+    I defenetly prefer Java. I like that it has set some boundries which makes it easier for me to understand. Also java comes with
+    a lot of extensions. Also the swing library for guis in java is way easier than TK in Python.
 -------------------------------------------------------------------------------------
     import hashlib
 
